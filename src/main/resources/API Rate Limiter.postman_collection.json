@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "ac14b49f-aa81-4c53-b082-3086a4ec917a",
+		"name": "API Rate Limiter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19629055"
+	},
+	"item": [
+		{
+			"name": "Leaky Bucket",
+			"item": [
+				{
+					"name": "Submit request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/projects/ratelimiter/leakybucket/v1/submit/imvtsl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"projects",
+								"ratelimiter",
+								"leakybucket",
+								"v1",
+								"submit",
+								"imvtsl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deregister user",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/projects/ratelimiter/leakybucket/v1/deregister/imvtsl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"projects",
+								"ratelimiter",
+								"leakybucket",
+								"v1",
+								"deregister",
+								"imvtsl"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sliding Window",
+			"item": [
+				{
+					"name": "Submit request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/projects/ratelimiter/slidingwindow/v1/submit/imvtsl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"projects",
+								"ratelimiter",
+								"slidingwindow",
+								"v1",
+								"submit",
+								"imvtsl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deregister user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/projects/ratelimiter/slidingwindow/v1/deregister/imvtsl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"projects",
+								"ratelimiter",
+								"slidingwindow",
+								"v1",
+								"deregister",
+								"imvtsl"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
